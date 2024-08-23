@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form id="payment">
+        <fieldset>
+            <legend> your details</legend>
+        <ol>
+            <li>
+                <label for="name">name: </label>
+                <input type="text" name="name" placeholder="name" required autofocus>
+            </li>
+            <br>
+
+            <li>
+                <label for="name">email:</label>
+                <input type="email" name="email" placeholder="email" required autofocus>
+            </li>
+            <br>
+
+            <li>
+                <label for="phone">phone:</label>
+                <input type="phone" name="phone" placeholder="phone" required autofocus>
+            </li>
+        </ol>
+    </fieldset>
+<br>
+    <fieldset>
+        <legend>delivary address</legend>
+    <ol>
+            <li>
+                <label for="address">address:</label>
+                <textarea name="address" id="address" cols="30" rows="2" required autofocus></textarea>
+            </li>
+<br>
+            <li>
+                <label for="pin code">pin code:</label>
+                <input type="text" name="pin_code" placeholder="pin_code">
+            </li>
+<br>
+           <li>
+                <label for="country">country:</label>
+                <input type="text" name="country" placeholder="country" required autofocus>
+           </li>
+    </ol>
+    </fieldset>
+<br>
+<fieldset>
+    <legend>card details</legend>
+    <ol>
+        <li>
+            <fieldset>
+                <legend>card type</legend>
+                <ol>
+                    <li>
+                        <label for="visa">visa</label>
+                        <input type="radio" name="visa">
+                    </li>
+                    
+                    <li>
+                        <label for="visa">visa</label>
+                        <input type="radio" name="visa">
+                    </li>
+                    <li>
+                        <label for="visa">visa</label>
+                        <input type="radio" name="visa">
+                    </li>
+                </ol>
+            </fieldset>
+        </li>
+        <br>
+        <li>
+            <label for="card number">card number:</label>
+            <input type="text" name="number" placeholder="card number" required autofocus>
+        </li>
+        <br>
+        <li>
+            <label for="security code">security code:</label>
+            <input type="text" name="security code" placeholder="seccurity code" required autofocus>
+        </li>
+        <br>
+        <li>
+            <label for="name of card">name of card:</label>
+            <input type="text" name="card" placeholder="exact name as on the card" required autofocus>
+        </li>
+    </ol>
+</fieldset>
+<fieldset>
+    <button>buy it!</button>
+</fieldset>
+    </form>
+</body>
+</html>

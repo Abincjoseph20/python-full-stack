@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <h1>This is my jquerry effects methods</h1>
+
+     <!--  <button class="btn btn-success" id="hide">hide</button>
+    <button class="btn btn-danger" id="show">show</button>
+    
+
+    disply effects
+    //////////////
+    hide show
+
+     <script>
+        $(document).ready(function(){
+            $("#hide").click(function(){
+                $("h1").hide(1500);
+            });
+            $("#show").click(function(){
+                $("h1").show(1500);
+            });
+        });
+    </script> -->
+
+
+
+
+<!-- toggle -->
+    <!-- <button class="btn btn-success"  id="toggle">toggle</button>
+    <script>
+        $(document).ready(function(){
+            $("#toggle").click(function(){
+                $("h1").toggle(1000);
+            });
+        });
+    </script> -->
+
+<!-- 
+
+
+
+    <button class="btn btn-success"  id="fadein">fadein</button>
+    <button class="btn btn-danger"  id="fadeout">fadeout</button><br>
+    <div class="sk" style="width: 80px; height: 80px; display: none; background-color: aqua;"></div><br>
+    <div class="js" style="width: 80px; height: 80px; display: none; background-color: olive;"></div><br>
+    <div class="jq" style="width: 80px; height: 80px; display: none; background-color: orange;"></div><br>
+    <script>
+        $(document).ready(function(){
+            $("#fadein").click(function(){
+                $(".sk").fadeIn();
+                $(".js").fadeIn("slow");
+                $(".jq").fadeIn("3000");
+            });
+            $("#fadeout").click(function(){
+                $(".sk").fadeOut();
+                $(".js").fadeOut("slow");
+                $(".jq").fadeOut("3000");
+            })
+        });
+    </script> -->
+
+
+
+<!-- fadeToggle -->
+    <!-- <button class="btn btn-success"  id="toggle">toggle</button><br>
+    <div class="sk" style="width: 80px; height: 80px; display: none; background-color: aqua;"></div><br>
+    <div class="js" style="width: 80px; height: 80px; display: none; background-color: olive;"></div><br>
+    <div class="jq" style="width: 80px; height: 80px; display: none; background-color: orange;"></div><br>
+
+    <script>
+        $(document).ready(function(){
+            $("#toggle").click(function(){
+                $(".sk").fadeToggle();
+                $(".js").fadeToggle("slow");
+                $(".jq").fadeToggle("3000");
+            });
+        });
+    </script> -->
+
+
+
+
+    
+    <!-- <button class="btn btn-success"  id="fadeto">fadeto</button><br>
+    <div class="sk" style="width: 80px; height: 80px; display: none; background-color: aqua;"></div><br>
+    <div class="js" style="width: 80px; height: 80px; display: none; background-color: olive;"></div><br>
+    <div class="jq" style="width: 80px; height: 80px; display: none; background-color: orange;"></div><br>
+
+    <script>
+        $(document).ready(function(){
+            $("#fadeto").click(function(){
+                $(".sk").fadeTo("slow", 0.15);
+                $(".js").fadeTo("slow" ,0.4);
+                $(".jq").fadeTo("slow", 0.8); 
+            });
+        });
+    </script> -->
+
+
+
+<!-- sliding effect -->
+<!-- 
+ <style>
+.jk,  .js{
+    padding: 5px;
+    text-align: center;
+    background-color: rgb(20, 223, 223);
+    border: solid 5px  rgb(35, 235, 165);
+}
+.js{
+    padding: 50px;
+    display: none;
+    background-color: rgb(138, 165, 42);
+}
+</style>
+
+<div class="jk">click to slide down</div>
+<div class="js">heiio monu!</div>
+
+<script>
+    $(document).ready(function(){
+        $(".jk").click(function(){
+            $(".js").slideDown("1000");
+        });
+        $(".jk").dblclick(function(){
+            $(".js").slideUp("1500");
+        });
+    });
+</script>  -->
+
+
+
+<!-- <style>
+    .jk,  .js{
+        padding: 5px;
+        text-align: center;
+        background-color: rgb(255, 255, 255);
+        border: solid 5px  rgb(0, 0, 0);
+    }
+    .js{
+        padding: 50px;
+        display: none;
+        background-color: rgb(230, 135, 192);
+    }
+    </style>
+    
+    <div class="jk">click to slide down</div>
+    <div class="js">heiio monu!</div>
+    
+<script>
+$(document).ready(function(){
+    $(".jk").click(function(){
+        $(".js").slideToggle("1000");
+    });
+});
+</script>
+
+
+
+
+<button class="btn btn-success"  id="animate">animate</button><br><br>
+<div id="sk"  style="width: 80px; height: 80px; position: absolute; background-color: rgb(151, 200, 27); "></div><br><br> -->
+ 
+<!-- animate -->
+<!-- 
+<script>
+    $(document).ready(function(){
+        $("#animate").click(function(){
+            $("#sk").animate({left: '250px'});
+        });
+    });
+</script> -->
+
+
+
+
+<!-- animate mutiple value -->
+<!-- <script>
+    $(document).ready(function(){
+        $("#animate").click(function(){
+            $("#sk").animate({ 
+            left:'250px',
+            opacity:'0.5',
+            height:'150px',
+            width:'150px'
+            });
+        });
+    });
+</script> -->
+
+
+
+<!-- animate relativevalue -->
+<!-- <script>
+    $(document).ready(function(){
+        $("#animate").click(function(){
+            $("#sk").animate({ 
+            left:'250px',
+            opacity:'0.1',
+            height:'+=150px',
+            width:'+=150px'
+            });
+        });
+    });
+</script> -->
+
+
+<!--<style>
+        #panel,  #flip{
+        padding: 5px;
+        font-size: 18px;
+        text-align: center;
+        background-color: rgb(229, 177, 171);
+        color: rgba(24, 24, 9, 0.544);
+        border: solid 1px #666;
+        border-radius: 3px;
+    }
+    #panel{
+        padding: 50px;
+        display: none;
+        background-color: rgb(157, 230, 237);
+    }
+</style>
+
+<button id="stop">stop sliding</button>
+<div id="flip">click me</div>
+<div id="panel">hello world</div>
+
+ <script>
+    $(document).ready(function(){
+        $("#flip").click(function(){
+            $("#panel").slideDown(5000);
+        });
+        $("#stop").click(function(){
+            $("#panel").stop();
+        });
+    }); 
+</script> -->
+
+
+
+<!-- call back function not using call back function -->
+
+<!-- <button>click me!</button>
+<h3 id="demo">hi hello how are you</h3>
+<script>
+$(document).ready(function(){
+    $("button").click(function(){
+        $("#demo").hide("slow",function(){
+            alert("hi");
+        });
+    });
+});
+</script> -->
+
+
+<!-- -->
+
+<!--<button>click me!</button>
+<h3 id="demo">hi hello how are you?</h3>
+
+  <script>
+$(document).ready(function(){
+    $("button").click(function(){
+        $("#demo").hide(5000);
+        alert("hi")
+    });
+});
+</script> -->
+
+
+
+
+</body>
+</html>

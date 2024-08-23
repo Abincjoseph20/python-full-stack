@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <button onclick="myfunction()">click me!</button>
+
+
+
+    <script>
+        const arra=["abin","sabin","jibin","abin"];
+        document.getElementById("demo").innerHTML=arra;
+        function myfunction(){
+            document.getElementById("demo").innerHTML=arra.indexOf('sabin')+1;
+        }
+    </script>
+
+
+
+
+<!-- 
+<script>
+    const las=["abin","sabin","jibin","abin"];
+    document.getElementById("demo").innerHTML=las; 
+
+    function myfunction(){
+        document.getElementById("demo").innerHTML=las.lastIndexOf("abin")+1;
+    }
+</script> -->
+
+
+
+
+
+<!-- <script>
+    const arra=["abin","sabin","jibin","abin"];
+
+    document.getElementById("demo").innerHTML=arra;
+
+    function myfunction(){
+        document.getElementById("demo").innerHTML=arra.includes("jibin");
+    }
+</script> -->
+
+
+
+<!-- 
+<script>
+    const arra=["abin","bibi","sabin","jibin","abin"];
+    document.getElementById("demo").innerHTML=arra.sort();
+
+    function myfunction(){
+        document.getElementById("demo").innerHTML=arra.reverse();
+    }
+</script> -->
+
+</body>
+</html>

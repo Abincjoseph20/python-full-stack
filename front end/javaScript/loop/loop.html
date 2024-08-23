@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <p id="demo"></p> -->
+    <!-- <button onclick="myfunction()">click me1</button> -->
+
+
+<!-- for -->
+
+    <!-- <script>
+
+        function myfunction(){
+        let arr=["hero","honda","zuzuki","yamha"];
+        let x=arr.length;
+
+        let text="";
+        for(let i=0; i<x; i++ ){
+            text += arr[i] +"<br>";
+        }
+document.getElementById("demo").innerHTML=text;
+    }
+    </script> -->
+
+
+<!-- while -->
+
+<!-- <script>
+    function myfunction(){
+        let text="";
+        let i=0;
+
+        while(i<10){
+        text+=  "<br> the number is " +i;
+        i++;
+    }
+    document.getElementById("demo").innerHTML=text;
+    }
+    
+</script> -->
+
+
+<!-- do whie -->
+
+
+<!-- 
+<script>
+    function myfunction(){
+        let text ="";
+        let i=0;
+
+        do{
+            text+= "<br> this is " +i;
+            i++;
+        }while(i<10);
+        document.getElementById("demo").innerHTML=text;
+
+    }
+</script> -->
+
+<!-- prime number -->
+
+
+<!-- <label for="">enter a number</label>
+<input type="text" name="prime" id="prime">
+
+<p id="demo"></p>
+<button id="limit" onclick="myfunction()">click me</button>
+
+
+
+<script>
+function myfunction(){
+const limit=parseInt(document.getElementById("prime").value);
+
+for(let i=2; i<=limit; i+=2){
+    document.getElementById("demo").innerHTML+=i + "  ";
+}
+
+}    
+</script> -->
+
+
+<!-- sum -->
+
+<!-- <label for="">enter a number</label>
+<input type="text" name="prime" id="prime">
+
+<p id="demo"></p>
+<button onclick="myfunction()">click me</button>
+
+<script>
+function myfunction(){
+let limit=parseInt(document.getElementById("prime").value);
+    
+let sum=0;
+
+for(let i=1; i<=limit; i++){
+    sum += i;
+}
+document.getElementById("demo").innerHTML=sum;
+}
+</script> -->
+
+
+
+<!-- faactorial -->
+
+<label for="">enter a number</label>
+<input type="text" name="fact" id="fact">
+
+
+<p id="demo"></p>
+<button onclick="myfunction()">click me!</button>
+
+
+<script>
+    function myfunction(){
+        let facto = parseInt(document.getElementById("fact").value);
+        if(facto<0){
+            document.getElementById("demo").innerHTML="this is a negative"
+            return;
+        }
+        let x=1;
+        for(let i=1;i<=facto;i++){
+            x *= i;
+        }
+        document.getElementById("demo").innerHTML=x;
+    }
+</script>
+
+<!-- <script>
+    function myfunction(){
+        let facto = parseInt(document.getElementById("fact").value);
+        if(facto<0){
+            document.getElementById("demo").innerHTML="it is a negative value";
+            return;  //retun is improetant in this programm
+        }
+
+        let x = 1;
+
+        for(let i=1;i<=facto;i++ ){
+            x *= i;
+        }
+        document.getElementById("demo").innerHTML= x;
+    }
+</script> -->
+
+<!-- <script>
+    function myfunction(){
+        let facto = parseInt(document.getElementById("fact").value);
+        if(facto<0){
+            document.getElementById('demo').innerHTML="this is a negative"
+            return;
+        }
+        let x=1;
+        for(let i=1;i<=facto;i++){
+            x*=i;
+        }
+        document.getElementById("demo").innerHTML=x;
+    }
+</script> -->
+
+
+
+</body>
+</html>

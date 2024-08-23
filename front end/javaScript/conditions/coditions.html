@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+     <p id="demo"></p>
+    <form action="">
+
+        <label for="number">enter a number:</label>
+        <input type="number" name="name" id="number" placeholder="enter a number"><br>
+        <button onclick="myfunction()">click me!</button>
+    </form>   
+    
+    <script>
+        function myfunction(){
+            let number = parseFloat(document.getElementById("number").value);
+
+            if(number % 2 === 0 )
+            {
+                alert(number + " is even");
+            }
+
+            else{
+                alert (number +" is odd");
+            }
+                
+            
+        }
+    </script> 
+
+<!--
+    <form>
+        <label for="num1">first number: </label>
+        <input type="number" name="num1" id="num1">
+        <br>
+        <br>
+        <label for="num2">secound number: </label>
+        <input type="number" name="num2" id="num2">
+        <br>
+        <br>
+
+
+        <button type="button" onclick="myfunction()">click me!</button>
+    </form>
+
+    <script>
+    function myfunction(){
+    let num1= parseFloat(document.getElementById("num1").value);
+    let num2= parseFloat(document.getElementById("num2").value);
+
+
+    if (num1 > num2)
+    {
+        alert (num1+" is graterthan " + num2);
+    }
+    else if( num2 > num1)
+    {
+        alert(num2+" is graterthan "+ num1);
+    }
+    else{
+        alert(" this is equal");
+    }
+}
+    </script> -->
+
+
+
+
+<!-- <form action="">
+    <label for="grade">enter your mark</label>
+    <input type="number" name="grade" id="grade"><br>
+    <br><br>
+    <button onclick="myfunction()">click me!</button>
+</form>
+
+<script>
+function myfunction(){
+    let mark =parseFloat(document.getElementById("grade").value);
+
+    if(mark >= 90)
+    {
+        alert( " grade is A");
+    }
+
+    else if(mark >= 80)
+    {
+        alert(" grade is B");
+    }
+    else if(mark >=70)
+    {
+          alert("grade is C");
+    }
+    else if(mark >= 60)
+    {
+        alert("grade is d");
+    }
+    else{
+        alert("grade is E")
+    }
+}
+</script>  -->
+
+
+
+<!-- <form action="">
+    <label for="age">enter your age</label>
+    <input type="number" name="age" id="age" value="">
+    <button type="button" onclick="myfunction()">click me!</button>
+</form>
+
+<script>
+
+    function myfunction(){
+
+    let age = parseFloat(document.getElementById("age").value);
+    let prize;
+
+switch(true){
+    case age <12 : prize=5;
+    break;
+    case age <18 :prize=10;
+    break;
+    case age <60 :prize=20;
+    break;
+    default : prize=15;
+}
+alert ("ticket prize is :"+prize);
+}
+
+</script> -->
+
+
+<!-- <form action="">
+    <label for="year">enter a year</label><br><p></p>
+    <input type="text"  name="year" id="year"><br><p></p>
+    <button type="submit" onclick="myfunction()">click me</button>
+</form>
+
+<script>
+    function myfunction(){
+
+    let x = parseFloat(document.getElementById("year").value);
+    
+if(x%4===0){
+    if(x%100===0){
+        if(x%400===0){
+            alert(x + " is leep year");
+        }else{
+            alert(x + " is not a leep year");
+        }
+
+    }else{
+        alert( x + " is a leep year");
+    }
+}else{
+    alert( x +" is not a leep year"   );
+     }
+} 
+
+
+</script>-->
+</body>
+</html>

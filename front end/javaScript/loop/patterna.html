@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <!-- <p id="demo"></p>
+    <script>
+        const x=document.getElementById("demo");
+        
+    let content=" ";
+
+for(let i=1;i<=5;i++){
+    for(let j=1; j<=i; j++){
+        content +=j+" ";
+    }
+    content+="<br>";
+}
+x.innerHTML=content;
+
+
+
+
+
+
+    </script> -->
+
+<!-- <label for="">enter a number</label>
+<input type="text" name="jd" id="jd">
+<button onclick="myfunction()">click me!</button>
+<pre id="demo"></pre>
+
+    <script>
+
+function myfunction(){
+    var limit= document.getElementById("jd").value;
+    var output="";
+
+    for(let i=1; i<=limit; i++){
+       for( let j=1; j<=i; j++){
+        output+="* ";
+       }
+       output+= "\n" ;
+    }
+document.getElementById("demo").textContent = output;
+
+}
+
+</script> -->
+
+
+
+
+
+<!-- <label for="">enter an number</label>
+<input type="text" placeholder="enter a number" name="jd" id="jd">
+<button class="btn btn-success"  onclick="myfunction()">click me!</button>
+<pre id="demo"></pre>
+
+<script>
+function myfunction(){
+    let n=document.getElementById("jd").value;
+    let y=""
+    for(let i=1;i<=n;i++){
+        for(let j=n;j>=i;j--){
+            y+="* ";
+        }
+        y+="\n";
+    }
+    document.getElementById("demo").innerHTML=y;
+}
+</script>  -->
+
+<!-- <label for="">enter an number</label>
+<input type="text" placeholder="enter a number" name="jd" id="jd">
+<button class="btn btn-success"  onclick="myfunction()">click me!</button>
+<pre id="demo"></pre>
+
+<script>
+    let n=document.getElementById("jd").value;
+    let y="";
+
+    for(let i=1;i<=n;i++){
+        for(let j=1;j<=n;j++){
+            if((i+j)<=n)
+            {
+                y+=" ";
+            }
+            else{
+                y+="*";
+            }
+            y+="\n";
+        }
+        document.getElementById("demo").innerHTML=y;
+    }
+</script> -->
+
+
+
+
+
+  <!-- <style>
+    pre {
+      font-family: monospace;
+      white-space: pre-wrap;
+    }
+  </style>
+</head>
+<body>
+
+<script>
+  // Function to generate a left-aligned triangle and return it as a string
+  function generateLeftAlignedTriangle(rows) {
+    let result = '';
+    for (let i = 1; i <= rows; i++) {
+      // Add spaces for left alignment
+      for (let j = 1; j <= rows - i; j++) {
+        result += " ";
+      }
+
+      // Add asterisks for the triangle
+      for (let k = 1; k <= i; k++) {
+        result += "*";
+      }
+
+      // Move to the next line after each row
+      result += "\n";
+    }
+
+    return result;
+  }
+
+  // Get the number of rows from the user or set a default value
+
+  const numRows = prompt("Enter the number of rows for the triangle:", 5);
+
+  // Call the function to generate the left-aligned triangle
+
+  const triangle = generateLeftAlignedTriangle(parseInt(numRows));
+
+  // Display the triangle in a pre element
+
+
+  document.body.innerHTML += "<pre>" + triangle + "</pre>";
+</script> -->
+
+
+
+
+</body>
+</html>

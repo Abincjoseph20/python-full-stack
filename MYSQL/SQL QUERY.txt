@@ -1,0 +1,134 @@
+db creation
+--------------------
+CREATE DATABASE MYDB;
+
+create a table
+---------------------
+CREATE TABLE MyTable(id INT, NAME VARCHAR(30), MARK INT(3) );
+
+
+to show table and all updates
+--------------------
+SELECT * FROM `mytable`
+
+
+insert datas to table
+------------------------
+INSERT INTO mytable(ID,NAME,MARK)VALUES(1,'ABIN',20);
+
+
+to select a particular field
+---------------------------
+SELECT NAME FROM mytable;
+
+
+insert multiple datas to table
+-------------------------------
+INSERT INTO mytable(id,NAME,MARK)VALUES(2,'JOBIN',25),(3,'SABIN',30),(4,'AMARNATH',35),(5,'DANI',40),(6,'JIFFIN',50);
+
+
+delete a data were using id
+------------------------------
+DELETE FROM mytable WHERE id=1;
+
+
+
+delete a data were using name
+---------------------------------
+DELETE FROM mytable WHERE NAME='JIFFIN';
+
+
+delete all datas to table
+-----------------------------
+DELETE FROM mytable;
+
+
+
+delete table
+---------------------------
+DROP TABLE mytable;
+
+
+
+delete database
+-----------------------------
+DROP DATABASE mydb;
+
+SELECT A PARTICULAR FIELDS
+-----------------------------
+SELECT NAME,PRICE FROM products;
+
+
+
+SELEC A PURTICULAR ITEM IN NAME
+-----------------------------------
+SELECT * FROM `products` WHERE NAME='SHIR';
+
+
+
+SELECT PURTICULAR ITEM STARTS WITH 'S'
+--------------------------------------
+SELECT * FROM `products` WHERE NAME LIKE 's%';
+
+
+UPDATE A PURTICULA ITEM'S FIELS NAME
+-------------------------------------
+UPDATE products SET NAME='SHIRT' WHERE id=1000;
+
+
+SELECT PURTICULAR ITEM END WITH 'T'
+------------------------------------
+SELECT * FROM `products` WHERE NAME LIKE '%T';
+
+
+
+SELECT PURTICULAR ITEMS IN 'IR'
+-------------------------------------
+SELECT * FROM `products` WHERE NAME LIKE '%IR%';
+
+
+
+SELECT PURTICULAR ITEM'S SECOUND LETTER START'S WITH 'S'
+----------------------------------------------------------
+SELECT * FROM `products` WHERE NAME LIKE '_H%';
+
+SELECT * FROM `products` WHERE NAME LIKE 'S_%';
+SELECT * FROM `products` WHERE NAME LIKE 'S__%';
+SELECT * FROM `products` WHERE NAME LIKE 'S%T';
+
+
+
+SELECT PURTICULAR ITEM'S BETWEEN 25 50
+---------------------------------------------------------
+SELECT * FROM `products` WHERE UNIT BETWEEN 25 AND 50;
+
+
+SELECT PURTICULAR ITEM'S IN 25 50
+---------------------------------------------------------
+SELECT * FROM `products` WHERE PRICE IN(50,400);
+
+SELECT PURTICULAR ITEM'S NOT IN 25 50
+---------------------------------------------------------
+SELECT * FROM `products` WHERE PRICE NOT IN (50,400);
+
+
+ADD NEW COLUMN 
+---------------------------------------------------
+ALTER TABLE products ADD COLUMN TOTAL_PRICE INT(11);
+
+
+UPDATE AND ID IS STRATS WITH 1000,
+-------------------------------------------------
+UPDATE products SET TOTAL_PRICE=50 WHERE id=1000;
+
+
+UPDATE A TOTAL_PRICE PRICE*UNIT
+-------------------------------------------------
+UPDATE products SET TOTAL_PRICE=PRICE*UNIT;
+
+SELECT * FROM `products` WHERE PRICE<50;
+SELECT * FROM `products` WHERE PRICE>=50;
+SELECT * FROM `products` WHERE PRICE <>50;
+SELECT DISTINCT NAME FROM products;
+SELECT * FROM `products` ORDER BY NAME ASC;
+SELECT * FROM `products` ORDER BY NAME DESC;
